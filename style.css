@@ -1,0 +1,254 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body { 
+    padding-top: 60px;
+    height: 100%;
+}
+
+p {
+  text-indent: 3em;
+}
+
+#logo {
+	max-height: 58px;
+}
+
+.push{
+  height: 155px;
+}
+
+.justified{
+  text-align: justify;
+}
+
+.background {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-items{
+	margin-top: 6px;
+	font-size:1.25em;
+}
+
+.navbar-nav > li:hover{
+	background: #f4f2f2;
+    border-radius: 20px;
+}
+
+.btn-success:hover{
+	background: white;
+	color:#439843;
+}
+
+.btn-search{
+  margin-left: -20px;
+}
+
+.main-view{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/blank.jpg");
+}
+
+
+.index-bg{
+    text-align: center;
+    background-image: url("./img/main.jpg");
+    color:#808080;
+}
+
+.register-bg{
+    background-image: url("./img/register.jpg");
+    min-height: 700px;
+}
+
+.signin-bg{
+    background-image: url("./img/signin.jpg");
+}
+
+.brand-name{
+	font-weight: 700;
+	font-size:5em;
+}
+
+.main-content{
+	margin-top:9%;
+}
+
+.btn-transparent{
+	background: transparent;
+	color:#439843;
+}
+
+.btn-transparent:hover{
+	background: #439843;
+	color:white;
+}
+
+.jumbotron{
+	margin-top: -50px;
+}
+
+.centered{
+	text-align: center;
+}
+
+.white-bold{
+	color:white;
+	font-weight: bolder;
+	font-size:1.3em;
+}
+
+.gray-bold{
+	color:white;
+	font-weight: bolder;
+	font-size:1.3em;
+	color:#808080;
+}
+
+.main-form{
+	margin-top: 2%;
+	display: none;
+}
+
+.fadein{
+	display: none;
+}
+
+.about-description{
+	font-size:1.1em;
+}
+
+.about-img{
+	margin-top: 15px;
+}
+
+.fa-big{
+	font-size:4.5em;
+}
+
+.input-icon{
+    position:relative;
+}
+
+.input-icon input[type=text]{
+    padding-left:32px;
+}
+
+.input-icon input[type=password]{
+    padding-left:32px;
+}
+
+.input-icon i{
+    position:absolute;
+    left:0;
+    top:8px;
+    padding:1px 23px;
+    color:#aaa;
+    transition:.3s;
+}
+
+.products{
+  padding:20px;
+  margin-top: 2%;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+.product{
+  text-align: center;
+  padding:5px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.4);
+  border-radius:4px;
+  transition: all .2s ease-in-out;
+  height: 222px;
+  font: 0/0 a; 
+}
+
+.product:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 2px rgba(0,0,0,0.7);
+  cursor:pointer;
+}
+
+.product-about{
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+  padding: 1.2em;
+}
+
+.product-link {
+  color:green;
+}
+
+.product-link:hover{
+  text-decoration: none;
+  color:green;
+}
+
+.about-market{
+  text-align: right;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.market-img{
+  max-height: 125px;
+  max-width: 170px;
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 90%;
+}
+
+.product-img{
+  max-height: 200px;
+  max-width: 480px;
+}
+
+.appear {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:appearFade ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:appearFade ease-in 1;
+  animation:appearFade ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.appear.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.appear.two {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay:0.7s;
+  animation-delay: 0.7s;
+}
+
+.appear.three {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@-webkit-keyframes appearFade { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes appearFade { from { opacity:0; } to { opacity:1; } }
+@keyframes appearFade { from { opacity:0; } to { opacity:1; } }
